@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exclusão de conta — Painel Notifique</title>
+<style>
+  :root{
+    --fundo:#0d131a; --cartao:#111820; --linha:#1e2a36;
+    --texto:#e9f1f5; --texto2:#8ba3b2; --verde:#19b14b; --verde-claro:#2ee06a;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--fundo); color:var(--texto);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  .envelope{max-width:760px;margin:0 auto;padding:40px 20px 72px}
+  header{border-bottom:1px solid var(--linha);padding-bottom:24px;margin-bottom:32px}
+  .marca{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+  .selo{
+    width:40px;height:40px;border-radius:11px;background:rgba(25,177,75,.12);
+    border:1px solid var(--linha);display:grid;place-items:center;
+    color:var(--verde-claro);font-weight:800;font-size:18px
+  }
+  .marca b{font-size:15px;letter-spacing:.3px}
+  .marca span{display:block;color:var(--texto2);font-size:12.5px;font-weight:400}
+  h1{font-size:27px;line-height:1.25;margin:0 0 10px}
+  .data{color:var(--texto2);font-size:13.5px;margin:0}
+  h2{font-size:17.5px;margin:34px 0 10px;color:var(--verde-claro)}
+  p,li{color:#cfdce4}
+  ul,ol{padding-left:20px}
+  li{margin-bottom:9px}
+  .cartao{
+    background:var(--cartao);border:1px solid var(--linha);border-radius:12px;
+    padding:18px 20px;margin:18px 0
+  }
+  .cartao p:first-child{margin-top:0}
+  .cartao p:last-child{margin-bottom:0}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.5px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--linha);vertical-align:top}
+  th{color:var(--texto2);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.4px}
+  a{color:var(--verde-claro)}
+  code{background:var(--cartao);border:1px solid var(--linha);border-radius:5px;padding:1px 6px;font-size:14px}
+  footer{margin-top:44px;padding-top:22px;border-top:1px solid var(--linha);color:var(--texto2);font-size:13.5px}
+  @media (max-width:520px){ h1{font-size:23px} .envelope{padding:28px 16px 56px} }
+</style>
+</head>
+<body>
+<div class="envelope">
+  <header>
+    <div class="marca">
+      <div class="selo">N</div>
+      <div><b>PAINEL NOTIFIQUE</b><span>Ferramenta de ativação para revendedores</span></div>
+    </div>
+    <h1>Exclusão de conta e de dados</h1>
+    <p class="data">Última atualização: 29 de outubro de 2026</p>
+  </header>
+
+  <p>
+    Esta página explica como pedir a exclusão da sua conta do aplicativo
+    <b>Painel Notifique</b>, desenvolvido pela Notifique Sistemas e distribuído na Google Play
+    sob o identificador <code>app.notifique.painel</code>.
+  </p>
+
+  <h2>Como solicitar a exclusão</h2>
+  <ol>
+    <li>Envie um e-mail para <a href="mailto:suporte@notifique.net">suporte@notifique.net</a> com o assunto <b>Excluir minha conta</b>.</li>
+    <li>Escreva no corpo da mensagem o <b>e-mail cadastrado</b> na sua conta do Painel Notifique.</li>
+    <li>Envie a mensagem a partir desse mesmo e-mail, para confirmarmos que a conta é sua.</li>
+    <li>Respondemos confirmando o recebimento e podemos pedir uma confirmação adicional antes de executar a exclusão, já que ela é definitiva.</li>
+  </ol>
+  <p>
+    O pedido é atendido em até <b>15 dias corridos</b>. Depois disso o acesso é encerrado e você não
+    consegue mais entrar no aplicativo com aquele login.
+  </p>
+
+  <div class="cartao">
+    <p>
+      <b>Antes de pedir a exclusão:</b> o saldo de créditos que ainda estiver na carteira é perdido e
+      não é convertido em dinheiro. Use o saldo ou solicite o acerto com o suporte antes de encerrar a conta.
+    </p>
+  </div>
+
+  <h2>O que é excluído</h2>
+  <table>
+    <tr><th>Dado</th><th>O que acontece</th></tr>
+    <tr>
+      <td>Dados de acesso — e-mail, senha, nome de exibição e identificador interno</td>
+      <td>Excluídos definitivamente</td>
+    </tr>
+    <tr>
+      <td>Configurações da conta — formas de recebimento, chaves de API de gateways, preferências e avisos</td>
+      <td>Excluídas definitivamente</td>
+    </tr>
+    <tr>
+      <td>Números de WhatsApp de clientes finais informados por você</td>
+      <td>Excluídos definitivamente</td>
+    </tr>
+    <tr>
+      <td>Saldo de créditos não utilizado</td>
+      <td>Zerado, sem conversão em dinheiro</td>
+    </tr>
+  </table>
+
+  <h2>O que é mantido, e por quanto tempo</h2>
+  <table>
+    <tr><th>Dado</th><th>Prazo</th><th>Motivo</th></tr>
+    <tr>
+      <td>Registros de ativação já executadas — identificador do aparelho, aplicativo ativado e data</td>
+      <td>5 anos</td>
+      <td>A ativação já foi entregue ao painel do aplicativo de destino e o registro é necessário para suporte e auditoria</td>
+    </tr>
+    <tr>
+      <td>Registros financeiros — recargas, pedidos e comprovantes</td>
+      <td>5 anos</td>
+      <td>Obrigação fiscal e contábil</td>
+    </tr>
+    <tr>
+      <td>Registros técnicos de acesso</td>
+      <td>6 meses</td>
+      <td>Art. 15 do Marco Civil da Internet (Lei 12.965/2014)</td>
+    </tr>
+  </table>
+  <p>
+    Os registros mantidos ficam dissociados do seu perfil sempre que a finalidade permitir, e são
+    eliminados ou anonimizados quando o prazo acaba.
+  </p>
+
+  <h2>Excluir apenas parte dos dados</h2>
+  <p>
+    Você pode pedir a exclusão de dados específicos sem encerrar a conta — por exemplo, os números de
+    WhatsApp de clientes finais ou as chaves de API de gateways de pagamento. Use o mesmo e-mail
+    <a href="mailto:suporte@notifique.net">suporte@notifique.net</a> e diga o que quer apagar.
+  </p>
+
+  <h2>Seus outros direitos</h2>
+  <p>
+    A Lei Geral de Proteção de Dados também garante confirmação de tratamento, acesso, correção,
+    anonimização, portabilidade e informação sobre compartilhamentos. Esses pedidos passam pelo mesmo
+    canal. Veja a
+    <a href="../">Política de Privacidade</a> para o detalhamento de quais dados tratamos e por quê.
+  </p>
+
+  <footer>
+    Painel Notifique — Notifique Sistemas. Contato para privacidade:
+    <a href="mailto:suporte@notifique.net">suporte@notifique.net</a>.
+  </footer>
+</div>
+</body>
+</html>
